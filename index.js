@@ -27,11 +27,6 @@ const sortAscending = (data) => {
 // mengembalikan array yang sudah diurutkan
 const sortDescending = (data) => {
   return data.sort().reverse();
-  const hasil = [];
-  for (let i = 0; i < res.length; i++) {
-    hasil.push((i + ". " + res[i]).toString());
-  }
-  return hasil;
 };
 
 // ! JANGAN DIMODIFIKASI
