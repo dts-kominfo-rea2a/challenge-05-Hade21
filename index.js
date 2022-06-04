@@ -9,7 +9,10 @@ const names = ["Halo", "Angel", "Nyoman", "Ketut", "Aisyah"];
 const sorter = (arr, func) => {
   const res = [];
   if (func(arr)) {
-    res.push(func(arr));
+    const sorted = func(arr);
+    for (let i = 0; i < sorted.length; i++) {
+      res.push((i + 1 + ". " + sorted[i]).toString());
+    }
   }
   return res;
 };
