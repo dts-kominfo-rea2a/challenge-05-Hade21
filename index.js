@@ -17,18 +17,13 @@ const sorter = (arr, func) => {
 // TODO: Fungsi untuk mengurutkan array of string secara ascending
 // mengembalikan array yang sudah diurutkan
 const sortAscending = (data) => {
-  const res = data.sort();
-  const hasil = [];
-  for (let i = 0; i < res.length; i++) {
-    hasil.push((i + ". " + res[i]).toString());
-  }
-  return hasil;
+  return data.sort();
 };
 
 // TODO: Fungsi untuk mengurutkan array of string secara descending
 // mengembalikan array yang sudah diurutkan
 const sortDescending = (data) => {
-  const res = data.sort().reverse();
+  return data.sort().reverse();
   const hasil = [];
   for (let i = 0; i < res.length; i++) {
     hasil.push((i + ". " + res[i]).toString());
